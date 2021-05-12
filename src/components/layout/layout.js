@@ -1,10 +1,12 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Navbar from '../navbar/navbar'
 import "../layout.css"
 import {Container} from './styles'
 import BurgerButton from '../burgerButton/burgerButton'
+import firebase from "gatsby-plugin-firebase"
+import 'firebase/analytics';
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,6 +20,17 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  useEffect(() => {
+    console.log('loaded page')
+    if (!firebase) {
+      return
+    }
+    
+    firebase
+      .analytics()
+      .logEvent("visited_portfolio_webpage")
+  }, [])
 
   return (
     <>

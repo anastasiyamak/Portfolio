@@ -18,7 +18,7 @@ const About = () => {
           </Img>
           <AboutInfo>
             <h5>Hi, I'm Anastasiya Makarevich</h5>
-            <h2>I'm in the web development industry <span>with ~1</span> years of experience.</h2>
+            <h2>I'm in the web development industry <span>with ~1</span> year of experience.</h2>
             <p>
               Hi, I'm <span>Anastasiya Makarevich</span> based in Minsk(Belarus). I can describe myself as a developer with deep interest in modern web development. I specialize in building responsive and usable websites using Html, Css, JavaScript, React and Gatsby.
           </p>

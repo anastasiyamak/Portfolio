@@ -40,7 +40,7 @@ const Projects = () => {
           </Flex>
         </ProjectInfo>   
       </Project>
-      <Project href='https://kalco.me/' target='_blank'>
+      <Project href='kalco-landing.web.app' target='_blank'>
         <Img fluid={data.image2.childImageSharp.fluid} />
         <ProjectInfo>
           <h5>Kalco</h5>
@@ -50,7 +50,7 @@ const Projects = () => {
           </Flex>
         </ProjectInfo>
       </Project>  
-      <Project href='https://ott.kalco.me/' target='_blank'>
+      <Project href='https://kalco-d7c54.web.app' target='_blank'>
         <Img fluid={data.image3.childImageSharp.fluid} />
         <ProjectInfo>
           <h5>Kalco</h5>
